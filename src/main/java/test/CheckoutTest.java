@@ -21,7 +21,7 @@ public class CheckoutTest {
     CardDetails cardDetails;
     BankPayment bankPayment;
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void tearUp() {
         driver = DriverFactory.getDriver(Util.getProperties("browserName"));
         basePage = new BasePage(driver);
@@ -33,29 +33,29 @@ public class CheckoutTest {
         basePage.launchApplication(Util.getProperties("url"));
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown(){
         Util.pauseExecutionForSeconds(3);
         basePage.closeBrowser();
     }
 
-    @Test(priority = 0)
+    @Test(priority = 1, groups = {"smoke"})
     public void verifyClickingBuyNowButtonRedirectsToCheckout_TC2() {
         homePage.clickBuyButton();
         Assert.assertTrue(checkout.checkIfCheckoutIsDisplayed());
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2, groups = {"smoke"})
     public void verifyPillowAddedToCartFor20000_TC1() {
         Assert.assertTrue(checkout.checkIfAmountIsShown());
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3, groups = {"smoke"})
     public void verifyCustomerDetailsOnCheckout_TC3() {
         Assert.assertTrue(Checkout.verifyDetailsOnCheckout(driver, details));
     }
 
-    @Test(priority = 1)
+    @Test(priority = 4, groups = {"smoke"})
     public void verifyCustomerFieldsAreEditable_TC4() {
         checkout.typeName();
         checkout.clearEmail();

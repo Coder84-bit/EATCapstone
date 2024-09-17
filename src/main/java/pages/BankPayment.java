@@ -108,18 +108,11 @@ public class BankPayment {
     @FindBy(xpath = "//div[@class='prompt-modal-title']")
     WebElement orderFailed;
 
-    public void switchToFailedFrame(){
-        driver.switchTo().defaultContent();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(failedPopup));
-        driver.switchTo().frame(failedPopup);
-    }
-
     public boolean verifyOrderFailure(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.switchTo().defaultContent();
         wait.until(ExpectedConditions.visibilityOf(failedPopup));
-        driver.switchTo().frame(0);
+        driver.switchTo().frame(failedPopup);
         return orderFailed.isDisplayed();}
 
 }

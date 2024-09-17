@@ -21,7 +21,7 @@ public class CancelTest {
     CardDetails cardDetails;
     BankPayment bankPayment;
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void tearUp() {
         driver = DriverFactory.getDriver(Util.getProperties("browserName"));
         basePage = new BasePage(driver);
@@ -47,16 +47,15 @@ public class CancelTest {
         bankPayment.switchToBankFrame();
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown(){
         Util.pauseExecutionForSeconds(3);
         basePage.closeBrowser();
     }
 
-    @Test(priority=1)
+    @Test(priority=1, groups = {"regression"})
     public void verifyCancelButtonRedirectsToOrderFailure(){
         bankPayment.clickCancel();
-        bankPayment.switchToFailedFrame();
         Assert.assertTrue(bankPayment.verifyOrderFailure());
     }
 

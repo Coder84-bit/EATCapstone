@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d19a3fd4-d225-415e-9974-f0d2c21ed42b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BankPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BankPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/setup/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/setup/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/CancelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/CancelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/InvalidOTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/InvalidOTPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/SummaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/SummaryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/ValidOTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/ValidOTPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testdata/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +31,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -39,6 +49,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.BankTest.executor": "Run",
+    "TestNG.C:/Users/rezwa_z0ahqiy/Desktop/EATJUNE/EATCapstone/regression.xml.executor": "Run",
+    "TestNG.C:/Users/rezwa_z0ahqiy/Desktop/EATJUNE/EATCapstone/sanity.xml.executor": "Run",
+    "TestNG.C:/Users/rezwa_z0ahqiy/Desktop/EATJUNE/EATCapstone/smoke.xml.executor": "Run",
     "TestNG.CancelTest.executor": "Run",
     "TestNG.CheckoutTest.executor": "Run",
     "TestNG.InvalidOTPTest.executor": "Run",
@@ -49,9 +62,9 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/rezwa_z0ahqiy/Desktop/EATJUNE/myBDD_Framework",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.32988507",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
@@ -60,7 +73,7 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.InvalidOTPTest">
+  <component name="RunManager">
     <configuration name="CancelTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Base" />
       <extension name="coverage">

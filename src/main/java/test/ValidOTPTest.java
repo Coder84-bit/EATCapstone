@@ -21,7 +21,7 @@ public class ValidOTPTest {
     CardDetails cardDetails;
     BankPayment bankPayment;
 
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)
     public void tearUp() {
         driver = DriverFactory.getDriver(Util.getProperties("browserName"));
         basePage = new BasePage(driver);
@@ -32,7 +32,6 @@ public class ValidOTPTest {
         bankPayment = new BankPayment(driver);
         basePage.launchApplication(Util.getProperties("url"));
         homePage.clickBuyButton();
-        checkout.clickCheckoutButton();
         checkout.typeName();
         checkout.clearEmail();
         checkout.typeEmail();
@@ -40,25 +39,26 @@ public class ValidOTPTest {
         checkout.typeCity();
         checkout.typeAddress();
         checkout.typePostalCode();
+        checkout.clickCheckoutButton();
         orderSummary.switchToOrderSummaryPopup();
         cardDetails.clickCreditCard();
         cardDetails.enterCardDetails();
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown(){
         Util.pauseExecutionForSeconds(3);
         basePage.closeBrowser();
     }
 
-    @Test(priority=1)
+    @Test(priority=1, groups = {"regression"})
     public void verifyBankDetailsScreen_TC12(){
         bankPayment.clickPayNowButton();
         bankPayment.switchToBankFrame();
         Assert.assertTrue(BankPayment.verifyBankDetails(driver, bankDetails));
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = {"regression"})
     public void verifyPaymentSuccessWithValidOTP_TC13(){
         bankPayment.enterValidOTP();
         bankPayment.clickOK();

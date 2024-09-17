@@ -17,7 +17,7 @@ public class DriverFactory {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver();
         }else if (browserName.equalsIgnoreCase("edge")){
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();

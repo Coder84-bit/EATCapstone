@@ -21,7 +21,7 @@ public class InvalidOTPTest {
     CardDetails cardDetails;
     BankPayment bankPayment;
 
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)
     public void tearUp() {
         driver = DriverFactory.getDriver(Util.getProperties("browserName"));
         basePage = new BasePage(driver);
@@ -47,17 +47,16 @@ public class InvalidOTPTest {
         bankPayment.switchToBankFrame();
     }
 
-    @AfterClass
+    @AfterClass (alwaysRun = true)
     public void tearDown(){
         Util.pauseExecutionForSeconds(3);
         basePage.closeBrowser();
     }
 
-    @Test(priority=3)
+    @Test(priority=1, groups = {"regression"})
     public void verifyPaymentFailureWithInvalidOTP_TC14(){
         bankPayment.enterInvalidOTP();
         bankPayment.clickOK();
-//        bankPayment.switchToFailedFrame();
         Assert.assertTrue(bankPayment.verifyOrderFailure());
     }
 
