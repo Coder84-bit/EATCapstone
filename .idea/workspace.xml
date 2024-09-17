@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d19a3fd4-d225-415e-9974-f0d2c21ed42b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BankPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BankPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/setup/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/setup/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/CancelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/CancelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/CheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/InvalidOTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/InvalidOTPTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/SummaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/SummaryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/ValidOTPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/ValidOTPTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testdata/config.properties" afterDir="false" />
-    </list>
+    <list default="true" id="d19a3fd4-d225-415e-9974-f0d2c21ed42b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
