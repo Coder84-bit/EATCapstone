@@ -70,6 +70,16 @@ public class Checkout {
     @FindBy(xpath = "//input[@value='10220']")
     WebElement postalCodeTextBox;
 
+    public void typeCustomerDetails(){
+        nameTextBox.sendKeys("Customer");
+        emailTextBox.clear();
+        emailTextBox.sendKeys("customer@midtrans.com");
+        phoneTextBox.sendKeys("7189171234");
+        cityTextBox.sendKeys("New York");
+        addressTextBox.sendKeys("123 John Doe Street");
+        postalCodeTextBox.sendKeys("12345");
+    }
+
     public void typeName(){nameTextBox.sendKeys("Customer");}
 
     public void clearEmail(){emailTextBox.clear();}

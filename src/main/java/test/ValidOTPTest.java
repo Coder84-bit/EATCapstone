@@ -62,6 +62,7 @@ public class ValidOTPTest {
     public void verifyPaymentSuccessWithValidOTP_TC13(){
         bankPayment.enterValidOTP();
         bankPayment.clickOK();
+        Assert.assertTrue(bankPayment.verifyPaymentSuccessful());
     }
 
 }
